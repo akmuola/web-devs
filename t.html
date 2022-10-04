@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="t.css">
+</head>
+<body>
+  <div class="container">
+		<form name="form">
+		<div class="display">
+			<input type="text" placeholder="0" name="displayResult" />
+		</div>
+			<div class="buttons">
+			  <div class="row">
+				<input type="button" value="7"  onclick = "form.displayResult.value += '7'" >
+				<input type="button" value="8"  onclick = "form.displayResult.value += '8'" >
+				<input type="button" value="9"  onclick = "form.displayResult.value += '9'" >
+				<input type="button" value="+"  onclick = "form.displayResult.value += '+'" >
+				</div>
+				
+				<div class="row">
+				<input type="button" value="4" onclick = "form.displayResult.value += '4'" >
+				<input type="button" value="5" onclick = "form.displayResult.value += '5'" >
+				<input type="button" value="6" onclick = "form.displayResult.value += '6'" >
+				<input type="button" value="-" onclick = "form.displayResult.value += '-'" >
+				</div>
+				
+				<div class="row">
+				<input type="button" value="1" onclick = "form.displayResult.value += '1'" >
+				<input type="button" value="2" onclick = "form.displayResult.value += '2'" >
+				<input type="button" value="3" onclick = "form.displayResult.value += '3'" >
+				<input type="button" value="*" onclick = "form.displayResult.value += '*'" >
+				</div>
+				
+				<div class="row">
+				<input type="button"  value="0" onclick = "form.displayResult.value += '0'" >
+				<input type="button"  value="." onclick = "form.displayResult.value += '.'" >
+				<input type="button"  value="/" onclick = "form.displayResult.value += '/'" >
+				<input type="button"  value="=" onclick = "form.displayResult.value = eval(form.displayResult.value)" >
+				</div>
+        <div class="row">
+       <button class="clearall" onclick = "form.displayResult.value = ' '" >Reset</button>
+        </div>
+			</div>
+		
+		</form>
+	</div>
+</body>
+</html>
